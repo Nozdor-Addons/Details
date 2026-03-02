@@ -1121,6 +1121,7 @@ do
 		[48065] = 30,
 		[48066] = 30, -- Rank 14
 		[308143] = 30, -- Rank 15 shild word t5
+		[160463] = 10, -- Покой
 		-- [47509] = 12, -- Divine Aegis (Priest) Rank 1
 		-- [47511] = 12,
 		-- [47515] = 12, -- Divine Aegis (Priest) Rank 3 (Some of these are not actual buff spellIDs)
