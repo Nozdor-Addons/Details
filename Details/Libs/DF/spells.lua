@@ -278,6 +278,35 @@ DF.CooldownsBySpec = {
 			[16190] = 3, -- Mana Tide Totem
 			[lust_id] = 4, -- Bloodlust / Heroism
 		},
+
+	--DEMONHUNTER
+		--havoc
+		[504] = {
+			[191427] = 1, --Metamorphosis
+			[370965] = 1, --The Hunt
+			[198589] = 2, --Blur
+			[196718] = 4, --Darkness
+			[179057] = 5, --Chaos Nova
+			[217832] = 5, --Imprison
+		},
+		--vengeance
+		[505] = {
+			[191427] = 1, --Metamorphosis
+			[198589] = 2, --Blur
+			[196718] = 4, --Darkness
+			[179057] = 5, --Chaos Nova
+			[207684] = 5, --Sigil of Misery
+			[217832] = 5, --Imprison
+		},
+		--devourer
+		[506] = {
+			[371710] = 1, --Void Metamorphosis
+			[371705] = 1, --The Hunt
+			[198589] = 2, --Blur
+			[196718] = 4, --Darkness
+			[371700] = 5, --Void Nova
+			[217832] = 5, --Imprison
+		},
 }
 
 -->  tells the duration, requirements and cooldown of a cooldown
@@ -360,6 +389,12 @@ DF.CooldownsInfo = {
 	[13750] = {cooldown = 180, duration = 20, talent = false, charges = 1, class = "ROGUE", type = 1},  --Adrenaline Rush
 	[51690] = {cooldown = 120, duration = 2, talent = 51690, charges = 1, class = "ROGUE", type = 1},  --Killing Spree (talent)
 	[51713] = {cooldown = 60, duration = 6, talent = 51713, charges = 1, class = "ROGUE", type = 1},  --Shadow Dance (talent)
+
+	--> demon hunter
+	[191427] = {cooldown = 120, duration = 24, talent = false, charges = 1, class = "DEMONHUNTER", type = 1},  --Metamorphosis
+	[371710] = {cooldown = 120, duration = 24, talent = false, charges = 1, class = "DEMONHUNTER", type = 1},  --Void Metamorphosis
+	[198589] = {cooldown = 60, duration = 10, talent = false, charges = 1, class = "DEMONHUNTER", type = 2},  --Blur
+	[196718] = {cooldown = 120, duration = 8, talent = false, charges = 1, class = "DEMONHUNTER", type = 4},  --Darkness
 }
 
 -- {cooldown = , duration = , talent = false, charges = 1}
@@ -416,6 +451,12 @@ DF.CrowdControlSpells = {
 
 	[51514] = "SHAMAN", --Hex
 	[64695] = "SHAMAN", --Earthgrab (talent)
+
+	[217832] = "DEMONHUNTER", --Imprison
+	[179057] = "DEMONHUNTER", --Chaos Nova
+	[207684] = "DEMONHUNTER", --Sigil of Misery
+	[371700] = "DEMONHUNTER", --Void Nova
+	[371718] = "DEMONHUNTER", --Void Chains
 }
 
 DF.SpecIds = {
@@ -459,6 +500,10 @@ DF.SpecIds = {
 	[65] = "PALADIN",
 	[66] = "PALADIN",
 	[70] = "PALADIN",
+
+	[504] = "DEMONHUNTER",
+	[505] = "DEMONHUNTER",
+	[506] = "DEMONHUNTER",
 }
 
 DF.CooldownToClass = {}
@@ -684,6 +729,10 @@ DF.SpellRangeCheckListBySpec = {
 	[71] = 355, --> warrior arms - Taunt
 	[72] = 355, --> warrior fury - Taunt
 	[73] = 355, --> warrior protect - Taunt
+
+	[504] = 204157, --> demon hunter havoc - Throw Glaive
+	[505] = 204157, --> demon hunter vengeance - Throw Glaive
+	[506] = 371706, --> demon hunter devourer - Consume
 }
 
 

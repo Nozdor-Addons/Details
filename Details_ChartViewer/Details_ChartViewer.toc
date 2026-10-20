@@ -4,6 +4,7 @@
 ## Notes-ruRU: Позволяет просматривать данные в графических диаграммах.
 ## RequiredDeps: Details
 ## OptionalDeps: Ace3
+## X-Nozdor-DemonHunter: 1
 
 locales\enUS.lua
 locales\deDE.lua

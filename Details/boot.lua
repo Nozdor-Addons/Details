@@ -588,6 +588,7 @@ do
 			["WARLOCK"] = true,
 			["DRUID"] = true,
 			["DEATHKNIGHT"] = true,
+			["DEMONHUNTER"] = true,
 		}
 		_detalhes.classstring_to_classid = {
 			["WARRIOR"] = 1,
@@ -599,7 +600,8 @@ do
 			["SHAMAN"] = 7,
 			["MAGE"] = 8,
 			["WARLOCK"] = 9,
-			["DRUID"] = 10,
+			["DEMONHUNTER"] = 10,
+			["DRUID"] = 11,
 		}
 		_detalhes.classid_to_classstring = {
 			[1] = "WARRIOR",
@@ -611,7 +613,8 @@ do
 			[7] = "SHAMAN",
 			[8] = "MAGE",
 			[9] = "WARLOCK",
-			[10] = "DRUID",
+			[10] = "DEMONHUNTER",
+			[11] = "DRUID",
 		}
 
 		_detalhes.segmentos = {

@@ -216,6 +216,10 @@ local global_spec_id_roles_detailed = {
 	[71] = "melee", -- Arms
 	[72] = "melee", -- Fury
 	[73] = "tank", -- Protection
+	-- Demon Hunter
+	[504] = "melee", -- Havoc
+	[505] = "tank", -- Vengeance
+	[506] = "ranged", -- Devourer
 }
 
 local class_fixed_roles = {
@@ -345,6 +349,7 @@ local specIDs = {
 	["DRUID"] = {102, 103, 103, 105},
 	["HUNTER"] = {253, 254, 255},
 	["SHAMAN"] = {262, 263, 264},
+	["DEMONHUNTER"] = {504, 505, 506},
 }
 
 function lib:CacheGameData ()

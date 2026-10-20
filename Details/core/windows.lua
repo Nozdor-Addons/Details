@@ -2325,7 +2325,7 @@ local _utf8sub = string.utf8sub
 --> config class colors
 	function _detalhes:OpenClassColorsConfig()
 		if (not _G.DetailsClassColorManager) then
-			gump:CreateSimplePanel (UIParent, 300, 280, Loc ["STRING_OPTIONS_CLASSCOLOR_MODIFY"], "DetailsClassColorManager")
+			gump:CreateSimplePanel (UIParent, 300, 313, Loc ["STRING_OPTIONS_CLASSCOLOR_MODIFY"], "DetailsClassColorManager")
 			local panel = _G.DetailsClassColorManager
 
 			_detalhes.gump:ApplyStandardBackdrop (panel)
@@ -2374,7 +2374,7 @@ local _utf8sub = string.utf8sub
 
 			panel.buttons = {}
 
-			for index, class_name in ipairs (CLASS_SORT_ORDER) do
+			for index, class_name in ipairs (CLASS_SORT_ORDER_ALL or CLASS_SORT_ORDER) do
 
 				local icon = gump:CreateImage (upper_panel, [[Interface\Glues\CHARACTERCREATE\UI-CHARACTERCREATE-CLASSES]], 32, 32, nil, CLASS_ICON_TCOORDS [class_name], "icon_" .. class_name)
 
@@ -3789,7 +3789,7 @@ local _utf8sub = string.utf8sub
 
 		end
 
-		local actors_classes = CLASS_SORT_ORDER
+		local actors_classes = CLASS_SORT_ORDER_ALL or CLASS_SORT_ORDER
 
 		local total_damage = 0
 		local total_heal = 0

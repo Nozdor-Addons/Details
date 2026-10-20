@@ -73,6 +73,7 @@ local specIDs = {
 	["DRUID"] = {102, 103, 104, 105},
 	["HUNTER"] = {253, 254, 255},
 	["SHAMAN"] = {262, 263, 264},
+	["DEMONHUNTER"] = {504, 505, 506},
 }
 
 local function GetFeralSubSpec(unit)
@@ -3276,7 +3277,7 @@ function DF:GetCurrentSpec()
 end
 
 local specs_per_class = {
-	-- ["DEMONHUNTER"] = {577, 581},
+	["DEMONHUNTER"] = {504, 505, 506},
 	["DEATHKNIGHT"] = {250, 251, 252},
 	["WARRIOR"] = {71, 72, 73},
 	["MAGE"] = {62, 63, 64},
@@ -3373,9 +3374,9 @@ DF.ClassFileNameToIndex = {
 	["PRIEST"] = 5,
 	["HUNTER"] = 3,
 	["WARLOCK"] = 9,
-	-- ["DEMONHUNTER"] = 12,
+	["DEMONHUNTER"] = 10,
 	["SHAMAN"] = 7,
-	["DRUID"] = 10,
+	["DRUID"] = 11,
 	-- ["MONK"] = 10,
 	["PALADIN"] = 2,
 }
@@ -3561,10 +3562,11 @@ function DF:GetCLEncounterIDs()
 end
 
 DF.ClassSpecs = {
-	-- ["DEMONHUNTER"] = {
-	-- 	[577] = true,
-	-- 	[581] = true,
-	-- },
+	["DEMONHUNTER"] = {
+		[504] = true,
+		[505] = true,
+		[506] = true,
+	},
 	["DEATHKNIGHT"] = {
 		[250] = true,
 		[251] = true,
@@ -3624,10 +3626,11 @@ DF.ClassSpecs = {
 }
 
 DF.SpecListByClass = {
-	-- ["DEMONHUNTER"] = {
-	-- 	577,
-	-- 	581,
-	-- },
+	["DEMONHUNTER"] = {
+		504,
+		505,
+		506,
+	},
 	["DEATHKNIGHT"] = {
 		250,
 		251,

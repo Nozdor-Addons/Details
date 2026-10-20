@@ -5,6 +5,7 @@
 ## DefaultState: Disabled
 ## RequiredDeps: Details
 ## OptionalDeps: Ace3
+## X-Nozdor-DemonHunter: 1
 #@no-lib-strip@
 embeds.xml
 #@end-no-lib-strip@

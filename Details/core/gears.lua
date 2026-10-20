@@ -2469,6 +2469,11 @@ if (NEEDTODO) then
 		[71] = "DAMAGER", --ARMS
 		[72] = "DAMAGER", --FURY
 		[73] = "DAMAGER", --PROT
+
+		--DEMONHUNTER
+		[504] = "DAMAGER", --HAVOC
+		[505] = "TANK", --VENGEANCE
+		[506] = "DAMAGER", --DEVOURER
 	}
 
 	function _detalhes:GetRoleFromSpec (specId, unitGUID)
@@ -2529,6 +2534,9 @@ if (NEEDTODO) then
 		[71] = true,
 		[72] = true,
 		[73] = true,
+		[504] = true,
+		[505] = true,
+		[506] = true,
 	}
 
 	Details.textureToSpec = {
@@ -2573,6 +2581,10 @@ if (NEEDTODO) then
 		WarriorArms = 71,
 		WarriorFury = 72,
 		WarriorProtection = 73,
+
+		DemonHunterHavoc = 504,
+		DemonHunterVengeance = 505,
+		DemonHunterDevourer = 506,
 	}
 
 
@@ -2613,6 +2625,10 @@ if (NEEDTODO) then
 		[71] = "WarriorArms",
 		[72] = "WarriorFury",
 		[73] = "WarriorProtection",
+
+		[504] = "DemonHunterHavoc",
+		[505] = "DemonHunterVengeance",
+		[506] = "DemonHunterDevourer",
 	}
 
 	function Details.IsValidSpecId (specId)

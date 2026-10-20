@@ -297,6 +297,24 @@ do
 		[6343] = 73, -- Thunder Clap
 		--[71] = 73, -- Defensive Stance --removed from the game
 
+		-- Havoc Demon Hunter:
+		[198013] = 504, -- Eye Beam
+		[258860] = 504, -- Essence Break
+		[258925] = 504, -- Fel Barrage
+
+		-- Devourer Demon Hunter:
+		[371706] = 506, -- Consume
+		[371702] = 506, -- Reap
+		[371703] = 506, -- Void Blade
+		[371704] = 506, -- Void Ray
+		[371701] = 506, -- Soul Immolation
+		[371708] = 506, -- Shift
+		[371705] = 506, -- The Hunt
+		[371710] = 506, -- Void Metamorphosis
+		[371719] = 506, -- Collapsing Star
+		[371700] = 506, -- Void Nova
+		[371718] = 506, -- Void Chains
+
 	}
 
 	_detalhes.SpecIDToClass = {
@@ -340,6 +358,10 @@ do
 		[71] = "WARRIOR", -- Arms Warrior
 		[72] = "WARRIOR", -- Fury Warrior
 		[73] = "WARRIOR", -- Protection Warrior
+
+		[504] = "DEMONHUNTER", -- Havoc Demon Hunter
+		[505] = "DEMONHUNTER", -- Vengeance Demon Hunter
+		[506] = "DEMONHUNTER", -- Devourer Demon Hunter
 	}
 
 	_detalhes.ClassSpellList = {
@@ -842,6 +864,42 @@ do
 		[34428]	= "WARRIOR", -- Victory Rush
 		[1680]	= "WARRIOR", -- Whirlwind
 		[44949]	= "WARRIOR", -- Whirlwind
+
+		[162794]	= "DEMONHUNTER", -- Chaos Strike
+		[201427]	= "DEMONHUNTER", -- Annihilation
+		[188499]	= "DEMONHUNTER", -- Blade Dance
+		[210152]	= "DEMONHUNTER", -- Death Sweep
+		[198013]	= "DEMONHUNTER", -- Eye Beam
+		[195072]	= "DEMONHUNTER", -- Fel Rush
+		[198793]	= "DEMONHUNTER", -- Vengeful Retreat
+		[232893]	= "DEMONHUNTER", -- Felblade
+		[204157]	= "DEMONHUNTER", -- Throw Glaive
+		[258920]	= "DEMONHUNTER", -- Immolation Aura
+		[258925]	= "DEMONHUNTER", -- Fel Barrage
+		[258860]	= "DEMONHUNTER", -- Essence Break
+		[370965]	= "DEMONHUNTER", -- The Hunt
+		[191427]	= "DEMONHUNTER", -- Metamorphosis
+		[183752]	= "DEMONHUNTER", -- Disrupt
+		[217832]	= "DEMONHUNTER", -- Imprison
+		[179057]	= "DEMONHUNTER", -- Chaos Nova
+		[207684]	= "DEMONHUNTER", -- Sigil of Misery
+		[278326]	= "DEMONHUNTER", -- Consume Magic
+		[371749]	= "DEMONHUNTER", -- Reverse Magic
+		[198589]	= "DEMONHUNTER", -- Blur
+		[196718]	= "DEMONHUNTER", -- Darkness
+		[371125]	= "DEMONHUNTER", -- Soul Pact
+		[371750]	= "DEMONHUNTER", -- Void Pact
+		[371706]	= "DEMONHUNTER", -- Consume
+		[371702]	= "DEMONHUNTER", -- Reap
+		[371703]	= "DEMONHUNTER", -- Void Blade
+		[371704]	= "DEMONHUNTER", -- Void Ray
+		[371701]	= "DEMONHUNTER", -- Soul Immolation
+		[371708]	= "DEMONHUNTER", -- Shift
+		[371705]	= "DEMONHUNTER", -- The Hunt
+		[371710]	= "DEMONHUNTER", -- Void Metamorphosis
+		[371719]	= "DEMONHUNTER", -- Collapsing Star
+		[371700]	= "DEMONHUNTER", -- Void Nova
+		[371718]	= "DEMONHUNTER", -- Void Chains
 	}
 
 	_detalhes.HardCrowdControlSpells = {
@@ -951,6 +1009,14 @@ do
 		[5246]	= true, -- Intimidating shout
 		[6552]	= true, -- Pummel
 		[7922]	= true, -- Warbringer
+
+		--demon hunter
+		[183752]	= true, -- Disrupt
+		[217832]	= true, -- Imprison
+		[179057]	= true, -- Chaos Nova
+		[207684]	= true, -- Sigil of Misery
+		[371700]	= true, -- Void Nova
+		[371718]	= true, -- Void Chains
 	}
 	_detalhes.MageFireWardSpells = {
 		[543] = 30 , -- Fire Ward (Mage) Rank 1
@@ -1275,6 +1341,9 @@ do
 		[871]	= {180, 12, 1}, -- Shield Wall
 		[12975]	= {180, 20, 1}, -- Last Stand
 		[23920]	= {25, 5, 1}, -- Spell Reflection
+
+--		["DEMONHUNTER"] = {},
+		[196718]	= {120, 8, 0}, -- Darkness
 	}
 
 	--> spellid = {cooldown, duration}
@@ -1332,7 +1401,11 @@ do
 		[871] = {180, 12}, -- Shield Wall
 		[12975] = {180, 20}, -- Last Stand
 		[23920] = {25, 5}, -- Spell Reflection
-		["WARRIOR"] = {871, 12975, 23920, 2565}
+		["WARRIOR"] = {871, 12975, 23920, 2565},
+
+		-- Demon Hunter
+		[198589] = {60, 10}, -- Blur
+		["DEMONHUNTER"] = {198589, 196718},
 	}
 
 	_detalhes.HarmfulSpells = {
@@ -1647,6 +1720,31 @@ do
 		[5246] 	= 	true, -- Intimidating Shout
 		[7386] 	= 	true, -- Sunder Armor
 		[107566] 	= 	true, -- Staggering Shout
+
+		--demon hunter
+		[162794]	=	true, -- Chaos Strike
+		[201427]	=	true, -- Annihilation
+		[188499]	=	true, -- Blade Dance
+		[210152]	=	true, -- Death Sweep
+		[198013]	=	true, -- Eye Beam
+		[232893]	=	true, -- Felblade
+		[204157]	=	true, -- Throw Glaive
+		[258925]	=	true, -- Fel Barrage
+		[258860]	=	true, -- Essence Break
+		[370965]	=	true, -- The Hunt
+		[183752]	=	true, -- Disrupt
+		[217832]	=	true, -- Imprison
+		[179057]	=	true, -- Chaos Nova
+		[207684]	=	true, -- Sigil of Misery
+		[278326]	=	true, -- Consume Magic
+		[371706]	=	true, -- Consume
+		[371702]	=	true, -- Reap
+		[371703]	=	true, -- Void Blade
+		[371704]	=	true, -- Void Ray
+		[371705]	=	true, -- The Hunt
+		[371719]	=	true, -- Collapsing Star
+		[371700]	=	true, -- Void Nova
+		[371718]	=	true, -- Void Chains
 	}
 
 	_detalhes.MiscClassSpells = {
@@ -1857,6 +1955,11 @@ do
 		[114192] 	= 	true, -- Mocking Banner
 		-- [7386] 	= 	true, -- sunder
 
+		--demon hunter
+		[195072]	=	true, -- Fel Rush
+		[198793]	=	true, -- Vengeful Retreat
+		[371708]	=	true, -- Shift
+		[183752]	=	true, -- Disrupt
 	}
 
 	_detalhes.DualSideSpells = {
@@ -1938,6 +2041,12 @@ do
 		[107574]	=	true, -- Avatar
 		[12292]	=	true, -- Bloodbath
 		-- [7386]	=	true, -- sunder
+
+		--demon hunter
+		[191427]	=	true, -- Metamorphosis
+		[371710]	=	true, -- Void Metamorphosis
+		[370965]	=	true, -- The Hunt
+		[371705]	=	true, -- The Hunt
 	}
 
 	_detalhes.HelpfulSpells = {
@@ -2099,6 +2208,14 @@ do
 		[12975]	=	true, -- Last Stand
 		[2565] 	= 	true, -- Shield Block
 		-- [7386]	=	true, -- sunder
+
+		--demon hunter
+		[198589]	=	true, -- Blur
+		[196718]	=	true, -- Darkness
+		[371701]	=	true, -- Soul Immolation
+		[371749]	=	true, -- Reverse Magic
+		[371125]	=	true, -- Soul Pact
+		[371750]	=	true, -- Void Pact
 	}
 
 
