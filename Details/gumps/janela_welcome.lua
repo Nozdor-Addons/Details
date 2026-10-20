@@ -1334,7 +1334,7 @@ local window_openned_at = time()
 			created_test_bars = 0
 
 			local current_combat = _detalhes:GetCombat ("current")
-			local actors_classes = CLASS_SORT_ORDER
+			local actors_classes = CLASS_SORT_ORDER_ALL or CLASS_SORT_ORDER
 			local total_damage = 0
 			local total_heal = 0
 

@@ -1235,6 +1235,9 @@ do
 
 					elseif (class == "SHAMAN") then
 						role = heavy == 1 and "caster" or heavy == 2 and "melee" or heavy == 3 and "healer"
+
+					elseif (class == "DEMONHUNTER") then
+						role = heavy == 2 and "tank" or heavy == 3 and "caster" or "melee"
 					end
 				end
 			end

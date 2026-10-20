@@ -4,6 +4,7 @@
 ## Notes-ruRU: Расширенный журнал смертей, временая шкала смертей в рейде со способностями врага.
 ## RequiredDeps: Details
 ## OptionalDeps: Ace3
+## X-Nozdor-DemonHunter: 1
 ## SavedVariablesPerCharacter: DeathGraphsDBDeaths, DeathGraphsDBEndurance, DeathGraphsDBCurrent, DeathGraphsDBGraph
 
 locales\enUS.lua

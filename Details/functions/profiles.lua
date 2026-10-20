@@ -625,8 +625,9 @@ local default_profile = {
 	--> spec coords
 --	/run Details.class_specs_coords = nil
 		class_specs_coords = {
-			-- [577] = {128/512, 192/512, 256/512, 320/512}, --> havoc demon hunter
-			-- [581] = {192/512, 256/512, 256/512, 320/512}, --> vengeance demon hunter
+			[504] = {128/512, 192/512, 256/512, 320/512}, --> havoc demon hunter
+			[505] = {192/512, 256/512, 256/512, 320/512}, --> vengeance demon hunter
+			[506] = {128/512, 192/512, 256/512, 320/512}, --> devourer demon hunter
 
 			[250] = {0, 64/512, 0, 64/512}, --> blood dk
 			[251] = {64/512, 128/512, 0, 64/512}, --> frost dk
@@ -677,12 +678,12 @@ local default_profile = {
 	--> class icons and colors
 		class_icons_small = [[Interface\AddOns\Details\images\classes_small]],
 		class_coords = {
-			-- ["DEMONHUNTER"] = {
-			-- 	0.73828126, -- [1]
-			-- 	1, -- [2]
-			-- 	0.5, -- [3]
-			-- 	0.75, -- [4]
-			-- },
+			["DEMONHUNTER"] = {
+				0.7421875, -- [1]
+				0.98828125, -- [2]
+				0.5, -- [3]
+				0.75, -- [4]
+			},
 			["HUNTER"] = {
 				0, -- [1]
 				0.25, -- [2]
@@ -794,11 +795,11 @@ local default_profile = {
 			},
 
 		class_colors = {
-			-- ["DEMONHUNTER"] = {
-			-- 	0.64,
-			-- 	0.19,
-			-- 	0.79,
-			-- },
+			["DEMONHUNTER"] = {
+				0.64, -- [1]
+				0.19, -- [2]
+				0.79, -- [3]
+			},
 			["HUNTER"] = {
 				0.67, -- [1]
 				0.83, -- [2]
